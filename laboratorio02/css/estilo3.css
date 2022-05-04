@@ -1,0 +1,19 @@
+/* Los selectores de etiqueta te permiten agregar estilos a cada de las etiquetas que se encuenten dentro del body y tambien se puede agregar estilos al body */
+body{
+    background-color: beige;
+}
+h1{
+    color: red;
+}
+hr{
+    width: 100%;
+    height: 15px;
+    background-color: orange;
+}
+h2{
+    color: blueviolet;
+    font-style: italic;
+}
+p{
+    color: darkblue;
+}

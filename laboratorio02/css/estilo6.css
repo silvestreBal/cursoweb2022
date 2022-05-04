@@ -1,0 +1,29 @@
+/* Si bien existen identiselectores de etiqueta, clases e identificadores, la recomendacion es poder trabajar con selectores de etiqueta y clases */
+body{
+    background-color: brown;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+    text-decoration: underline;
+}
+hr{
+    width: 100%;
+    height: 10px;
+    background-color: cadetblue;
+}
+.parrafoinicial{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: greenyellow;
+}
+.contenidoinicial{
+    text-align: justify;
+    color: white;
+    font-style: italic;
+}
+.contenidofinal{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkgoldenrod;
+}
