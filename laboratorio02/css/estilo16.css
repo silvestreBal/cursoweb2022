@@ -1,0 +1,82 @@
+/* importar letras de Google: cuando importas las letras de Google siempre se pone al inicio del estilo */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Macondo&display=swap');
+
+
+body{
+    background-color: bisque;
+}
+.contenedor{
+    background-color: white;
+    margin: auto;
+}
+
+/* Llamamos a las letras descargadas de Google */
+
+.fuente1{
+    font-family: 'Caveat', cursive;
+}
+.fuente2{
+    font-family: 'Macondo', cursive;
+}
+
+/* agregamos estilos al parrafo */
+.fuente3{
+    font-style: italic;
+}
+.fuente4{
+    font-style: oblique;
+}
+.fuente5{
+    font-style: normal;
+}
+.fuente6{
+    font-style: bold;
+}
+.fuente7{
+    font-style: bolder;
+}
+.fuente8{
+    font-style: small;
+}
+.fuente9{
+    font-style: small-caps;
+}
+.fuente10{
+    font-size: 25px
+    ;
+}
+.fuente11{
+    font-variant: normal;
+}
+
+/* utilizamos las fuentes descargadas */
+@font-face{
+    font-family: "PTSans-Italic";
+    src: url("/fonts/PTSans-Italic.ttf");
+}
+@font-face{
+    font-family: "Robotmono-variable";
+    src: url("/fonts/RobotoMono-VariableFont_wght.ttf");
+}
+@font-face{
+    font-family: "BeyondMarsItalic";
+    src: url("/fonts/BeyondMarsItalic.ttf");
+}
+@font-face{
+    font-family: "ILikeBee";
+    src: url("/fonts/ILikeBee.otf");
+}
+
+/* utilizamos las fuentes descargadas */
+.fuente12{
+    font-family: "PTSans-Italic";
+}
+.fuente13{
+    font-family: "Robotmono-variable";
+}
+.fuente14{
+    font-family: "BeyondMarsItalic";
+}
+.fuente15{
+    font-family: "ILikeBee";
+}
