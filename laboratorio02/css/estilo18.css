@@ -1,0 +1,94 @@
+.contenedor{
+    background-color: black;
+}
+/* generemos degradado de arriba hacia abajo */
+.degradado1{
+    width: 500px;
+    height: 250px;
+    background: repeating-linear-gradient(to bottom,red,yellow);
+}
+/* generemos degradado de derecha hacia izquierda */
+.degradado2{
+    width: 500px;
+    height: 250px;
+    background: repeating-linear-gradient(to right,red,yellow);
+}
+/* generemos degradado de izquierda hacia derecha */
+.degradado3{
+    width: 500px;
+    height: 250px;
+    background: repeating-linear-gradient(to left,red,yellow);
+}
+/* generemos degradado de abajo hacia arriba */
+.degradado4{
+    width: 500px;
+    height: 250px;
+    background: repeating-linear-gradient(to top,red,yellow);
+}
+/* generemos degradado de arriba hacia abajo de muchos colores */
+.degradado5{
+    width: 500px;
+    height: 250px;
+    background: repeating-linear-gradient(to bottom,pink,red,yellow,green,blue,white);
+}
+/* generemos degradado de arriba hacia abajo de muchos colores */
+.degradado6{
+    width: 500px;
+    height: 250px;
+    background: repeating-linear-gradient(to right,pink,red,yellow,green,blue,white);
+}
+/* generemos degradado de izquierda hacia derecha de muchos colores */
+.degradado7{
+    width: 500px;
+    height: 250px;
+    background: repeating-linear-gradient(to left,pink,red,yellow,green,blue,white);
+}
+/* generemos degradado de abajo hacia arriba de muchos colores */
+.degradado8{
+    width: 500px;
+    height: 250px;
+    background: repeating-linear-gradient(to top,pink,red,yellow,green,blue,white);
+}
+/* generemos degradado radial */
+.degradado9{
+    width: 500px;
+    height: 250px;
+    background: repeating-radial-gradient(red,yellow);
+}
+/* generemos degradado radial de muchos colores */
+.degradado10{
+    width: 500px;
+    height: 250px;
+    background: repeating-radial-gradient(pink,red,yellow,green,blue,white);
+}
+/* aplicando degradados utilizando angulos de inclinacion */
+/* generemos degradado de arriba hacia abajo */
+.degradado11{
+    width: 500px;
+    height: 250px;
+    background: repeating-linear-gradient(180deg,red,yellow);
+}
+/* generemos degradado de derecha hacia izquierda */
+.degradado12{
+    width: 500px;
+    height: 250px;
+    background: repeating-linear-gradient(90deg,red,yellow);
+}
+/* generemos degradado de izquierda hacia derecha */
+.degradado13{
+    width: 500px;
+    height: 250px;
+    background: repeating-linear-gradient(-90deg,red,yellow);
+}
+/* generemos degradado de abajo hacia arriba */
+.degradado14{
+    width: 500px;
+    height: 250px;
+    background: repeating-linear-gradient(0deg,red,yellow);
+}
+/* generemos degradado de inclinacion especifico */
+.degradado15{
+    width: 500px;
+    height: 250px;
+    background: repeating-linear-gradient(70deg,red,yellow);
+}
