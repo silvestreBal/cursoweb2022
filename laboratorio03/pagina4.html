@@ -7,6 +7,7 @@
     <title>Javascript - Pagina 4</title>
     <script type="text/javascript">
 
+        //Ejemplo 1
         //definiendo variables
         var b=0, h=0, area=0, men="";
         //capturando valores
@@ -23,6 +24,35 @@
         //mostrar resultados
         document.write("El area del triangulo es: "+area+"<br>");
         document.write(men+"<br>");
+        document.write("<hr>");
+
+
+        //Ejemplo 2
+        //definiendo variables
+        var pre=0, can=0, sbt=0, des=0, tip="", igv=0, tot=0;
+        //capturando valores
+        pre=parseFloat(prompt("Ingrese el precio:"));
+        can=parseInt(prompt("Ingrese la cantidad:"));
+        tip=parseFloat(prompt("Ingrese [f]Factura o [b]Boleta"));
+        //realizar operaciones
+        sbt=pre*can;
+        if(sbt>1000){
+            des=sbt*0.05;
+        }else{
+            des=sbt*0.02;
+        }
+
+        if(tip=="f"){
+            igv=sbt*0.18;
+        }else{
+            igv=0;
+        }
+        tot=sbt-des+igv;
+        //mostrar resultados
+        document.write("El subtotal es: "+sbt+"<br>");
+        document.write("El descuento es: "+des+"<br>");
+        document.write("El igv es: "+igv+"<br>");
+        document.write("El total es: "+tot+"<br>");
         document.write("<hr>");
 
     </script>

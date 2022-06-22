@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Pagina 5</title>
+    <script type="text/javascript">
+
+        //Ejemplo 1
+        //definiendo variables
+        var pre=0, can=0, sbt=0, cat="", des=0, tot=0;
+        //capturando valores
+        pre=parseFloat(prompt("Ingrese el precio del producto:"));
+        can=parseInt(prompt("Ingrese la cantidad a comprar:"));
+        cat=prompt("Ingrese la categoria [a] o [b] o [c] o [d]");
+        //realizar operaciones
+        sbt=pre*can;
+        //condicion
+        if(cat=="a"){
+            des=sbt*0.03;
+        }else{
+            if(cat=="b"){
+                des=sbt*0.05;
+            }else{
+                if(cat=="c"){
+                    des=sbt*0.07;
+                }else{
+                    if(cat=="d"){
+                        des=sbt*0.09;
+                    }else{
+                        des=0;
+                    }
+                }
+            }
+        }
+        tot=sbt-des;
+        //mostrar resultados
+        document.write("El subtotal es: "+sbt+"<br>");
+        document.write("El descuento es: "+des+"<br>");
+        document.write("El total es: "+tot+"<br>");
+        document.write("<hr>");
+
+        //Ejemplo 2
+        //definiendo variables
+        var sb=0, bon=0, des=0, cat="", sf=0;
+        //capturando valores
+        sb=parseFloat(prompt("Ingrese el sueldo basico:"));
+        cat=parseInt(prompt("Ingrese la categoria [1] o [2] o [3]"));
+        //condicion
+        if(cat==1){
+            bon=sb*0.07;
+            des=sb*0.05;
+        }else{
+            if(cat==2){
+                bon=sb*0.09;
+                des=sb*0.07;
+            }else{
+                if(cat==3){
+                    bon=sb*0.11;
+                    des=sb*0.09;
+                }else{
+                    bon=0;
+                    des=0;
+                }
+            }
+        }
+        sf=sb+bon-des;
+        //mostrar resultados
+        document.write("El sueldo basico es: "+sb+"<br>");
+        document.write("La bonificacion es: "+bon+"<br>");
+        document.write("El descuento es: "+des+"<br>");
+        document.write("El sueldo final es: "+sf+"<br>");
+        document.write("<hr>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
