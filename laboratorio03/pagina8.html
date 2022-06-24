@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Pagina 8</title>
+    <script type="text/javascript">
+
+        // Estructuras Repetitivas
+        // Te permite repetir un bloqueu de codigo
+        // Se clasifican en 3:
+        // Mientras -> while
+        // Repetir -> de while
+        // Para -> for
+
+        //Ejemplo 1
+        //definiendo variables
+        var nom="", cont=1;
+        //capturando valores
+        nom=prompt("Ingresa tu nombre:");
+
+        //while
+        while(cont<=5){
+            document.write("Hola como estas "+nom+"<br>");
+            cont++;
+        }
+
+        //do while
+        cont=1;
+        do{
+            document.write("Hola como estas "+nom+"<br>");
+            cont++;
+        }while(cont<=5);
+
+        //for
+        cont=1;
+        for(i=1;cont<=5;cont++){
+            document.write("Hola como estas "+nom+"<br>");
+        }
+        document.write("<hr>");
+
+
+        //Ejemplo 2
+        //definiendo variables
+        var can=0, cont=1;
+        //capturando valores
+        can=parseInt(prompt("Ingresa la cantidad de numeros:"));
+
+        //while
+        while(cont<=can){
+            document.write(cont+"<br>");
+            cont++;
+        }
+
+        //do while
+        cont=1;
+        do{
+            document.write(cont+"<br>");
+            cont++;
+        }while(cont<=can);
+
+        //for
+        cont=1;
+        for(cont;cont<=can;cont++){
+            document.write(cont+"<br>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
