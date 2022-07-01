@@ -65,6 +65,99 @@
         for(cont;cont<=can;cont++){
             document.write(cont+"<br>");
         }
+        document.write("<hr>");
+
+    //Acumulador
+
+    //Ejemplo 3
+    //primeros numeros naturales
+    var cont=1, sum=0;
+
+    //while
+    while(cont<=10){
+        sum=sum+cont;
+        cont=cont+1;
+    }
+    document.write("La suma de los 10 valores es: "+sum+"<br>");
+
+    //do while
+    cont=1;
+    sum=0;
+    do{
+        sum=sum+cont;
+        cont++;
+    }while(cont<=10);
+    document.write("La suma de los 10 valores es: "+sum+"<br>");
+
+    //for
+    cont=1;
+    sum=0;
+    for(cont; cont<=10; cont++){
+        sum=sum+cont;
+    }
+    document.write("La suma de los 10 valores es: "+sum+"<br>");
+    document.write("<hr>");
+
+    //Ejemplo 4
+    //numeros naturales
+    var cont=1, sum=0, num=0;
+
+    //capturando valores
+    num=parseInt(prompt("Ingresa la cantidad de numeros:"));
+
+    //while
+    while(cont<=num){
+        sum=sum+cont;
+        cont=cont+1;
+    }
+    document.write("La suma de los 10 valores es: "+sum+"<br>");
+
+    //do while
+    cont=1;
+    sum=0;
+    do{
+        sum=sum+cont;
+        cont++;
+    }while(cont<=num);
+    document.write("La suma de los 10 valores es: "+sum+"<br>");
+
+    //for
+    cont=1;
+    sum=0;
+    for(cont; cont<=num; cont++){
+        sum=sum+cont;
+    }
+    document.write("La suma de los 10 valores es: "+sum+"<br>");
+    document.write("<hr>");
+
+    //Ejemplo 5:
+    //numeros naturales
+    var cont=1, can=0, num=0;
+
+    //capturando valores
+    can=parseInt(prompt("Ingresa la cantidad de numeros:"));
+    num=parseInt(prompt("Ingresa el numero de la tabla"));
+
+    //while
+    while(cont<=can){
+        document.write(num+" X "+cont+" = "+(num*cont)+"<br>");
+        cont++;
+    }
+    //do while
+    cont=1;
+    do{
+        document.write(num+" X "+cont+" = "+(num*cont)+"<br>");
+        cont++;
+    }while(cont<=can);
+
+    //for
+    cont=1;
+    for(cont; cont<=can; cont++){
+        document.write(num+" X "+cont+" = "+(num*cont)+"<br>");
+    }
+    document.write("<hr>");
+
+
     </script>
 </head>
 <body>
