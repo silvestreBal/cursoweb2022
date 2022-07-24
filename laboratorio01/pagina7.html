@@ -8,8 +8,9 @@
 </head>
 <body>
     <h1>Tablas</h1>
-
-
+    <!-- Las tablas permiten seccionar la informacion dentro de una pagina web.
+    Para poder crear la tabla utilizamos la etiqueta <table></table> dentro de ella luego creamos las filas para ello utilizamos la etiqueta <tr></tr> y dentro de las filas creamos las columnas con la etiqueta <td></td>
+    Si se quiere mostrar el borde de una tabla se agrega el atributo border="#"-->
     <h2>Ejemplo de Tabla</h2>
     <h3>Ejemplo 1</h3>
     <table border="1">
@@ -33,7 +34,7 @@
         </tr>
     </table>
     <h3>Ejemplo 2</h3>
-
+    <!-- <th></th> esta etiqueta permite agregar un encabezado de tabla, esto quiere decir que el texto que se escriba aparacera en negrita -->
     <table border="1">
         <tr>
             <th>Codigo</th>
@@ -56,6 +57,8 @@
     </table>
 
     <h3>Ejemplo 3</h3>
+    <!-- cellspacing="#" permite dar un espacio entre celdas
+    cellpadding="#" permite dar relleno entre celdas -->
     <table border="1" cellspacing="10" cellpadding="10">
         <tr>
             <th>Titulo 1</th>
@@ -74,7 +77,7 @@
         </tr>
     </table>
     <h3>Ejemplo 4</h3>
-
+    <!-- align permite definir la alineacion de toda la tabla o de una fila especifica -->
     <table border="2" cellspacing="2" cellpadding="5">
         <tr>
             <th>Codigo</th>
@@ -93,6 +96,8 @@
         </tr>
     </table>
     <h3> Ejemplo 5</h3>
+    <!-- Combinar filas y columnas
+    colspan="#" permite combinar columnas-->
     <table border="1" cellspacing="2" cellpadding="5">
         <tr>
             <td colspan="2">C1 y C2</td>
@@ -113,6 +118,7 @@
         </tr>
     </table>
     <h3>Ejemplo 6</h3>
+    <!-- rowspan="#" permite combinar filas-->
     <table border="1" cellspacing="2" cellpadding="5">
         <tr>
             <td rowspan="2">C1 y C5</td>
@@ -156,8 +162,10 @@
     </table>
 
     <h3>Ejemplo 8</h3>
-
-
+    En HTML5 las tablas se seccionan en las siguientes partes
+    <!-- <thead></thead> define la cabecera de la tabla
+    <tfoot></tfoot> define el pie de pagina de la tabla, es opcional
+    <tbody></tbody> define el cuerpo de la tabla-->
     <table border="1">
         <thead>
             <th>Codigo</th>

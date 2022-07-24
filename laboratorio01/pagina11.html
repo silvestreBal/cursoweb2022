@@ -8,9 +8,15 @@
 </head>
 <body>
     <h1>Formularios</h1>
-
-
-
+    <!-- Para crear formularios existen varias etiquetas dentro de las principales tenemos:
+    <form></form>, define el formulario dentro de la etiqueta form podemos agregar el atributo method="POST/GET" es el metodo de envio de datos, cuando es POST los datos se envian de forma oculta y cuando es GET los datos se envian por la barra de direcciones.
+    <fieldset></fieldset>, va dentro del formulario y sirve para poder realizar un borde al formulario.
+    <legend></legend>, esta etiqueta permite agregar un titulo al formulario.
+    <label for=""></label>, permite agregar una etiqueta al formulario, en la cual podemos agregar texto.
+    <input type="Tipo_Etiqueta"></input>, nos permite agregar una gran variedad de etiquetas entre cajas de textos, botones de opcion, casillas de verificacion, ect.
+    <select name="" id=""></select>, permite agregar un cuadro combinado y dentro del cuadro combinado cada elemento sera agregado con la etiqueta <option value=""></option>.
+    <textarea name="" id="" cols="30" rows="10"></textarea>, permite agregar un cuadro de texto para poder agregar informacion.-->
+    
     <form action="" method="post">
         <fieldset>
             <legend>Formulario y sus controles</legend>
@@ -35,13 +41,37 @@
             Input Busqueda: <input type="search"><br>
             Input Numerica: <input type="number"><br>
             Input Fecha: <input type="date"><br>
+            Input Hora: <input type="time"><br>
+            Input Fecha y hora local: <input type="datetime-local"><br>
+            Input Semana: <input type="week"><br>
+            Input Mes: <input type="month"><br>
+            </fieldset>
+            <fieldset>
+                <legend>No son cajas de texto</legend>
+                Input Color: <input type="color"><br>
+                Input Rango: <input type="range"><br>
+                Input file: <input type="file"><br>
+                Input Boton de opcion: <input type="radio" name="categoria" id="">A
+                <input type="radio" name="categoria" id="">B
+                <input type="radio" name="categoria" id="">C <br>
+                Input Casilla de verificacion: <input type="checkbox" name="" id="">Habilitado
+                <input type="checkbox" name="" id="">Descuento
+            </fieldset>
+            <fieldset>
+                <legend>Cuadro combinado</legend>
+                Select:
+                <select name="" id="">
+                    <option value="">Seleccione un distrito</option>
+                    <option value="">Cercado de Lima</option>
+                    <option value="">Breña</option>
+                    <option value="">Comas</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Cuadro de Texto</legend>
+                Textarea: <textarea name="" id="" cols="30" rows="10"></textarea>
             </fieldset>
 
-            Input: <input type="text"><br>
-            Input: <input type="text"><br>
-            Input: <input type="text"><br>
-            Input: <input type="text"><br>
-            Input: <input type="text"><br>
 
         </fieldset>
 
