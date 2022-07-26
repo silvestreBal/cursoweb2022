@@ -1,4 +1,4 @@
-
+/* Selector de Clase, permite generar estilo globales los cuales se pueden aplicar a mas de una etiqueta, para identificarlos en el HTML se le agrega el atributo class="nombre_clase" y en la hoja de estilo se la agrega. nombre_clase */
 .cuerpo{
     background-color: crimson;
 }

@@ -1,4 +1,4 @@
-
+/* Selector de identificador, permite generar un estilo el cual solo se aplicara a una etiqueta, motivo por el cual se crea varios identificadores, para poder identificar en HTML se agrega el atributo id="nombre_identificador" y en la hoja de estilo se agrega #nombre_identificador */
 #cuerpo{
     background-color: crimson;
 }
