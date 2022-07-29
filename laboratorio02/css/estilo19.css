@@ -1,3 +1,6 @@
+.contenedor{
+    background-color: gainsboro;
+}
 /* Los vinculos o enlaces presentan varios estados de los cuales tenemos:
 link: el vinculo normal
 visited: cuando ha sido visitado

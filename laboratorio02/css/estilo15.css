@@ -7,7 +7,7 @@ body{
 .contenedor{
     background-color: white;
 }
-/* agregamos el parrafo a la derecha */
+/* agregamos color al texto del parrafo */
 .parrafocolor{
     color: yellowgreen;
     border: solid;
@@ -55,7 +55,7 @@ body{
     border: solid;
     border-color: red;
 }
-
+/* agregando decoraciones al texto */
 .parrafosobrelinea{
     text-decoration: overline;
     border: solid;
@@ -103,10 +103,11 @@ body{
     border: solid;
     border-color: red;
 }
-
-
-
-
+.parrafoespaciolinea{
+    line-height: 2px;
+    border: solid;
+    border-color: red;
+}
 .parrafoespaciolineaamplio{
     line-height: 7px;
     border: solid;

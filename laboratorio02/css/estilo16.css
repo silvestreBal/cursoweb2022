@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Macondo&display=swap');
 
 
+
 body{
     background-color: bisque;
 }
@@ -11,7 +12,6 @@ body{
 }
 
 /* Llamamos a las letras descargadas de Google */
-
 .fuente1{
     font-family: 'Caveat', cursive;
 }
@@ -30,20 +30,19 @@ body{
     font-style: normal;
 }
 .fuente6{
-    font-style: bold;
+    font-weight: bold;
 }
 .fuente7{
-    font-style: bolder;
+    font-weight: bolder;
 }
 .fuente8{
     font-style: small;
 }
 .fuente9{
-    font-style: small-caps;
+    font-variant: small-caps;
 }
 .fuente10{
-    font-size: 25px
-    ;
+    font-size: 25px;
 }
 .fuente11{
     font-variant: normal;
