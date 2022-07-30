@@ -10,6 +10,7 @@ body{
     height: 100px;
     border: 1px dotted firebrick;
     overflow: visible;
+    padding-bottom: 400px;
 }
 .separacion{
     padding-top: 200px;
