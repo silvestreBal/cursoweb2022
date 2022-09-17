@@ -4,8 +4,11 @@ if (tablaSucursal == null) {
     var tablaSucursal = [];
 }
 
+listar();
 
 function listar(){
+
+
     console.log("Ingresando a listar...");
     //console.log(tablaSucursal);
 
@@ -23,7 +26,7 @@ function listar(){
             dataFila +="<td>"+varSucursal.horario+"</td>";
             dataFila +="<td>"+varSucursal.estado+"</td>";
             dataFila +="<td>"+
-                       "<button type='button' class='btn btn-warning'>EDITAR</button>"+
+                       "<button type='button' class='btn btn-warning' onclick='abrirForm("+varSucursal.idLocal+")'>EDITAR</button>"+
                        "</td>";
             dataFila +="</tr>";
 
@@ -31,4 +34,9 @@ function listar(){
         document.getElementById("dataSucursales").innerHTML = dataFila;
     }
 
+}
+
+function abrirForm(idForm){
+    localStorage.setItem("idForm", JSON.stringify(idForm));
+    window.location.replace("sucursales-form.html");
 }
