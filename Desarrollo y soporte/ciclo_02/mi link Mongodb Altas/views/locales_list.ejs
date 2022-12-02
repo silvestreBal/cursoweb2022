@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locales</title>
+    
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="./css/estilo1.css">
+
+</head>
+<body>
+    <%- include('layout/menu'); %>
+    <div class="container mt-5">
+
+╔═══╗ ♪ <br>
+║███║ ♫  <br>
+║ (●) ♫ <br>
+╚═══╝♪♪ <br>
+        <h1><font FACE="'Macondo', cursive">Bienvenido;  Registrese en nuestros Locales</font></h1>
+        <br>
+        <div class="card">
+            <div class="card-header text-center text-primary">
+
+                <font FACE="roman" SIZE=6 COLOR="bundle">LISTA DE LOCALES </font>
+                
+            </div>
+            <div class="card-body">
+                <a class="btn btn-success" href="/locales/form/0">NUEVO</a>
+                <table class="table table-bordered table-hover">
+                    <thead style="color: darkblue; background-color:greenyellow;">
+                        <tr>
+                            <th>IDLOCAL</th>
+                            <th>DISTRITO</th>
+                            <th>DIRECCION</th>
+                            <th>TELEFONO</th>
+                            <th>HORARIO</th>
+                            <th>ESTADO</th>
+                            <th>ACCIONES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%  if(dataLocales.length) {   %>
+                            <% dataLocales.forEach( item => { %>
+                                <tr>
+                                    <td> <%=  item.idLocal %> </td>
+                                    <td> <%=  item.distrito %> </td>
+                                    <td> <%=  item.direccion %> </td>
+                                    <td> <%=  item.telefono %> </td>
+                                    <td> <%=  item.horario %> </td>
+                                    <td> <%=  item.estado %> </td>
+                                    <td>
+                                        <a class="btn btn-outline-warning" href="/locales/form/<%=  item.idLocal %> ">
+                                            EDITAR
+                                        </a>
+                                    </td>
+                                </tr>
+                            <% }) %>   
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
